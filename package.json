@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "tailwind": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "name": "part-2-final-files",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

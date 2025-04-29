@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./src/font.css" />
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./src/matter.js" defer></script>
+</head>
+
+<body class="bg-[#111] text-white font-['Nunito']">
+
+  <!-- Header & Main Section -->
+
+  <section class="flex flex-col justify-between h-screen">
+
+    <!-- Header -->
+
+    <header class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
+
+
+
+      <!-- Logo -->
+      <a class="pointer-events-auto" href="javascript:window.location.reload(true)">
+        <svg width="67" height="59" viewBox="0 0 67 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.98769 2.66257C5.14532 3.57144 3.6601 5.101 2.72906 6.07637C1.77586 7.02957 1 7.87193 1 7.9606C1 8.02711 9.20197 8.09361 19.2438 8.09361C37.3103 8.09361 37.4877 8.09361 38.9064 8.58129C39.9926 8.93597 40.6576 9.33499 41.6108 10.266C43.0961 11.6626 43.6059 12.5714 44.0049 14.4778C44.3153 16.0074 44.2266 17.5813 43.6724 19.3325C43.3177 20.5074 42.0985 21.9705 40.0591 23.6108C39.5271 24.032 38.6182 24.8079 38.064 25.2956C37.4877 25.8054 35.2266 27.8005 33.0542 29.7291C30.8596 31.6798 28.7537 33.5197 28.399 33.8522L27.7118 34.4729L28.4212 35.0714C28.798 35.4261 29.6404 36.1355 30.2833 36.6897C30.9261 37.2439 32.101 38.2636 32.899 38.9729C33.697 39.6601 34.8498 40.6576 35.4483 41.1897C36.0468 41.6995 37 42.5419 37.5542 43.0517C38.1084 43.5394 39.1724 44.4705 39.9039 45.1133C40.6355 45.734 41.6995 46.665 42.2537 47.1749C42.8079 47.6847 43.6946 48.4606 44.2044 48.8818C44.7365 49.303 45.5123 49.9902 45.9557 50.4113C46.399 50.8104 47.3966 51.6527 48.1502 52.2734C48.9261 52.8941 49.5468 53.4705 49.5468 53.537C49.5468 53.6256 49.9236 53.9581 50.3892 54.2685C50.8325 54.5788 51.8966 55.4877 52.7389 56.2857L54.2685 57.7488H59.3448H64.4212L63.601 56.9064C63.1355 56.4631 62.5591 55.931 62.2709 55.7537C62.0049 55.5764 60.9631 54.6675 59.9655 53.7586C58.968 52.8498 58.0369 52.0296 57.9039 51.9409C57.7488 51.8744 57.1946 51.3645 56.6404 50.8325C56.0862 50.3005 54.601 48.9926 53.3153 47.8842C52.0296 46.798 49.9902 45.0025 48.7709 43.9384C44.8695 40.4803 44.4926 40.1478 43.4286 39.2389C42.8522 38.7512 42.165 38.1527 41.9212 37.9089C41.6552 37.665 41.0345 37.133 40.5468 36.7118C40.0813 36.2907 39.3054 35.6256 38.8399 35.2044L38.0197 34.4729L39.0616 33.4975C39.6601 32.9655 40.7685 31.968 41.5665 31.2586C42.3645 30.5714 43.4064 29.6182 43.9163 29.1749C44.4039 28.7315 45.335 27.9335 45.9778 27.3793C47.3522 26.2266 47.3079 26.2709 48.3498 24.8744C49.3251 23.5665 50.0788 21.8818 50.6773 19.665C51.3202 17.2931 51.1872 13.9902 50.3227 11.7512C50.0123 10.8867 49.6798 10 49.6133 9.75617C49.5468 9.51233 48.9704 8.58129 48.3498 7.67243C46.2882 4.67982 42.9409 2.39656 39.1502 1.42119C37.6207 1.02218 36.5123 1.00001 22.5246 1.00001H7.53941L5.98769 2.66257Z"
+            fill="black" stroke="white" stroke-width="1.7734" />
+          <path
+            d="M25.2734 16.8054C24.9187 17.0714 24.298 17.5813 23.899 17.9581C23.5222 18.3128 22.7241 19.0443 22.1256 19.5542C21.5493 20.064 20.6182 20.8842 20.064 21.3498C19.5099 21.8374 18.1133 23.0566 16.9606 24.0542C15.8079 25.0517 14.2562 26.4039 13.5246 27.0468C12.7931 27.6897 11.8621 28.4877 11.4631 28.8424C11.0419 29.1749 10.4433 29.7069 10.1108 30.0172C9.75616 30.3276 8.98029 31.0369 8.33744 31.5911C7.71675 32.1453 6.76355 33.0099 6.20936 33.5197L5.23399 34.4507L7.38424 36.3571C8.55911 37.399 10.0443 38.7069 10.6429 39.2611C11.2635 39.8153 12.1059 40.5911 12.5271 40.968C12.9704 41.367 13.569 41.8768 13.8571 42.1207C14.3892 42.564 17.7143 45.4236 18.202 45.8892C18.3571 46 19 46.5542 19.6429 47.1084C20.2857 47.6626 21.2167 48.4828 21.6823 48.9261C22.1699 49.3916 22.6133 49.7685 22.6798 49.7685C22.7463 49.7685 23.3005 50.234 23.9433 50.8325C25.3842 52.1404 26.7808 53.3596 28.2882 54.6453C28.931 55.1995 29.8842 56.0197 30.3941 56.4852L31.3251 57.3054L35.4926 57.2611L39.6823 57.1946L39.0394 56.6404C37.9754 55.7315 34.6281 52.7833 34.1182 52.3177C33.8522 52.0739 33.0985 51.431 32.4557 50.8768C31.8128 50.3227 30.8818 49.5246 30.3941 49.0591C29.8842 48.6158 28.8867 47.7291 28.1552 47.1084C27.4236 46.4655 26.3596 45.5345 25.8054 45.0468C25.2512 44.5369 24.3202 43.7167 23.7438 43.2291C23.1453 42.7414 22.4803 42.1429 22.2365 41.9212C21.2167 40.9901 17.6478 37.8424 16.5172 36.9113C15.8522 36.3571 14.9877 35.5813 14.5665 35.1823C13.6576 34.3177 13.5468 34.4951 16.7389 31.7463C18.0246 30.6601 19.3768 29.4631 19.7315 29.1305C20.1084 28.798 21.0394 27.9557 21.8374 27.2685C23.6773 25.6946 24.8965 24.6084 26.1379 23.5C26.6699 23.0123 27.601 22.1921 28.1995 21.6823C31.1034 19.1773 33.3867 17.1601 33.7857 16.7611L34.2512 16.2956H30.1059C26.1601 16.3177 25.8941 16.3399 25.2734 16.8054Z"
+            fill="black" stroke="white" stroke-width="1.7734" />
+        </svg>
+      </a>
+
+
+
+      <div class="flex gap-4 pointer-events-auto">
+
+        <!-- Phone -->
+        <a href="tel:7016200260"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="phone number">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg></a>
+
+
+        <!-- whatsapp -->
+        <a href="https://wa.me/7016200260?text=Hi, How are you?" target="_blank">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp"
+            class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" width="27"
+            height="27" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+
+    <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
+    <div class="flex -mt-10 relative">
+      <div class="w-full px-4 max-w-screen-xl mx-auto">
+
+        <!-- R-Logo -->
+
+        <svg viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="pointer-events-none absolute top-0 left-1/2  -translate-y-[80px] sm:-translate-y-[180px] -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[650px]">
+
+          <g filter="url(#filter0_d_1_4900)">
+            <path
+              d="M30.5 11.5C26.7 15.6 20 22.5 15.8 26.9C11.5 31.2 8 35 8 35.4C8 35.7 45 36 90.3 36C171.8 36 172.6 36 179 38.2C183.9 39.8 186.9 41.6 191.2 45.8C197.9 52.1 200.2 56.2 202 64.8C203.4 71.7 203 78.8 200.5 86.7C198.9 92 193.4 98.6 184.2 106C181.8 107.9 177.7 111.4 175.2 113.6C172.6 115.9 162.4 124.9 152.6 133.6C142.7 142.4 133.2 150.7 131.6 152.2L128.5 155L131.7 157.7C133.4 159.3 137.2 162.5 140.1 165C143 167.5 148.3 172.1 151.9 175.3C155.5 178.4 160.7 182.9 163.4 185.3C166.1 187.6 170.4 191.4 172.9 193.7C175.4 195.9 180.2 200.1 183.5 203C186.8 205.8 191.6 210 194.1 212.3C196.6 214.6 200.6 218.1 202.9 220C205.3 221.9 208.8 225 210.8 226.9C212.8 228.7 217.3 232.5 220.7 235.3C224.2 238.1 227 240.7 227 241C227 241.4 228.7 242.9 230.8 244.3C232.8 245.7 237.6 249.8 241.4 253.4L248.3 260H271.2H294.1L290.4 256.2C288.3 254.2 285.7 251.8 284.4 251C283.2 250.2 278.5 246.1 274 242C269.5 237.9 265.3 234.2 264.7 233.8C264 233.5 261.5 231.2 259 228.8C256.5 226.4 249.8 220.5 244 215.5C238.2 210.6 229 202.5 223.5 197.7C205.9 182.1 204.2 180.6 199.4 176.5C196.8 174.3 193.7 171.6 192.6 170.5C191.4 169.4 188.6 167 186.4 165.1C184.3 163.2 180.8 160.2 178.7 158.3L175 155L179.7 150.6C182.4 148.2 187.4 143.7 191 140.5C194.6 137.4 199.3 133.1 201.6 131.1C203.8 129.1 208 125.5 210.9 123C217.1 117.8 216.9 118 221.6 111.7C226 105.8 229.4 98.2 232.1 88.2C235 77.5 234.4 62.6 230.5 52.5C229.1 48.6 227.6 44.6 227.3 43.5C227 42.4 224.4 38.2 221.6 34.1C212.3 20.6 197.2 10.3 180.1 5.9C173.2 4.1 168.2 4 105.1 4H37.5L30.5 11.5Z"
+              stroke="url(#paint0_linear_1_4900)" stroke-opacity="0.9" stroke-width="8" />
+            <path
+              d="M117.5 75.3C115.9 76.5 113.1 78.8 111.3 80.5C109.6 82.1 106 85.4 103.3 87.7C100.7 90 96.5 93.7 94 95.8C91.5 98 85.2 103.5 80 108C74.8 112.5 67.8 118.6 64.5 121.5C61.2 124.4 57 128 55.2 129.6C53.3 131.1 50.6 133.5 49.1 134.9C47.5 136.3 44 139.5 41.1 142C38.3 144.5 34 148.4 31.5 150.7L27.1 154.9L36.8 163.5C42.1 168.2 48.8 174.1 51.5 176.6C54.3 179.1 58.1 182.6 60 184.3C62 186.1 64.7 188.4 66 189.5C68.4 191.5 83.4 204.4 85.6 206.5C86.3 207 89.2 209.5 92.1 212C95 214.5 99.2 218.2 101.3 220.2C103.5 222.3 105.5 224 105.8 224C106.1 224 108.6 226.1 111.5 228.8C118 234.7 124.3 240.2 131.1 246C134 248.5 138.3 252.2 140.6 254.3L144.8 258L163.6 257.8L182.5 257.5L179.6 255C174.8 250.9 159.7 237.6 157.4 235.5C156.2 234.4 152.8 231.5 149.9 229C147 226.5 142.8 222.9 140.6 220.8C138.3 218.8 133.8 214.8 130.5 212C127.2 209.1 122.4 204.9 119.9 202.7C117.4 200.4 113.2 196.7 110.6 194.5C107.9 192.3 104.9 189.6 103.8 188.6C99.2 184.4 83.1 170.2 78 166C75 163.5 71.1 160 69.2 158.2C65.1 154.3 64.6 155.1 79 142.7C84.8 137.8 90.9 132.4 92.5 130.9C94.2 129.4 98.4 125.6 102 122.5C110.3 115.4 115.8 110.5 121.4 105.5C123.8 103.3 128 99.6 130.7 97.3C143.8 86 154.1 76.9 155.9 75.1L158 73H139.3C121.5 73.1 120.3 73.2 117.5 75.3Z"
+              stroke="url(#paint1_linear_1_4900)" stroke-opacity="0.9" stroke-width="8" />
+            <path
+              d="M30.5 11.5C26.7 15.6 20 22.5 15.8 26.9C11.5 31.2 8 35 8 35.4C8 35.7 45 36 90.3 36C171.8 36 172.6 36 179 38.2C183.9 39.8 186.9 41.6 191.2 45.8C197.9 52.1 200.2 56.2 202 64.8C203.4 71.7 203 78.8 200.5 86.7C198.9 92 193.4 98.6 184.2 106C181.8 107.9 177.7 111.4 175.2 113.6C172.6 115.9 162.4 124.9 152.6 133.6C142.7 142.4 133.2 150.7 131.6 152.2L128.5 155L131.7 157.7C133.4 159.3 137.2 162.5 140.1 165C143 167.5 148.3 172.1 151.9 175.3C155.5 178.4 160.7 182.9 163.4 185.3C166.1 187.6 170.4 191.4 172.9 193.7C175.4 195.9 180.2 200.1 183.5 203C186.8 205.8 191.6 210 194.1 212.3C196.6 214.6 200.6 218.1 202.9 220C205.3 221.9 208.8 225 210.8 226.9C212.8 228.7 217.3 232.5 220.7 235.3C224.2 238.1 227 240.7 227 241C227 241.4 228.7 242.9 230.8 244.3C232.8 245.7 237.6 249.8 241.4 253.4L248.3 260H271.2H294.1L290.4 256.2C288.3 254.2 285.7 251.8 284.4 251C283.2 250.2 278.5 246.1 274 242C269.5 237.9 265.3 234.2 264.7 233.8C264 233.5 261.5 231.2 259 228.8C256.5 226.4 249.8 220.5 244 215.5C238.2 210.6 229 202.5 223.5 197.7C205.9 182.1 204.2 180.6 199.4 176.5C196.8 174.3 193.7 171.6 192.6 170.5C191.4 169.4 188.6 167 186.4 165.1C184.3 163.2 180.8 160.2 178.7 158.3L175 155L179.7 150.6C182.4 148.2 187.4 143.7 191 140.5C194.6 137.4 199.3 133.1 201.6 131.1C203.8 129.1 208 125.5 210.9 123C217.1 117.8 216.9 118 221.6 111.7C226 105.8 229.4 98.2 232.1 88.2C235 77.5 234.4 62.6 230.5 52.5C229.1 48.6 227.6 44.6 227.3 43.5C227 42.4 224.4 38.2 221.6 34.1C212.3 20.6 197.2 10.3 180.1 5.9C173.2 4.1 168.2 4 105.1 4H37.5L30.5 11.5Z"
+              stroke="url(#paint2_linear_1_4900)" stroke-width="8" />
+            <path
+              d="M117.5 75.3C115.9 76.5 113.1 78.8 111.3 80.5C109.6 82.1 106 85.4 103.3 87.7C100.7 90 96.5 93.7 94 95.8C91.5 98 85.2 103.5 80 108C74.8 112.5 67.8 118.6 64.5 121.5C61.2 124.4 57 128 55.2 129.6C53.3 131.1 50.6 133.5 49.1 134.9C47.5 136.3 44 139.5 41.1 142C38.3 144.5 34 148.4 31.5 150.7L27.1 154.9L36.8 163.5C42.1 168.2 48.8 174.1 51.5 176.6C54.3 179.1 58.1 182.6 60 184.3C62 186.1 64.7 188.4 66 189.5C68.4 191.5 83.4 204.4 85.6 206.5C86.3 207 89.2 209.5 92.1 212C95 214.5 99.2 218.2 101.3 220.2C103.5 222.3 105.5 224 105.8 224C106.1 224 108.6 226.1 111.5 228.8C118 234.7 124.3 240.2 131.1 246C134 248.5 138.3 252.2 140.6 254.3L144.8 258L163.6 257.8L182.5 257.5L179.6 255C174.8 250.9 159.7 237.6 157.4 235.5C156.2 234.4 152.8 231.5 149.9 229C147 226.5 142.8 222.9 140.6 220.8C138.3 218.8 133.8 214.8 130.5 212C127.2 209.1 122.4 204.9 119.9 202.7C117.4 200.4 113.2 196.7 110.6 194.5C107.9 192.3 104.9 189.6 103.8 188.6C99.2 184.4 83.1 170.2 78 166C75 163.5 71.1 160 69.2 158.2C65.1 154.3 64.6 155.1 79 142.7C84.8 137.8 90.9 132.4 92.5 130.9C94.2 129.4 98.4 125.6 102 122.5C110.3 115.4 115.8 110.5 121.4 105.5C123.8 103.3 128 99.6 130.7 97.3C143.8 86 154.1 76.9 155.9 75.1L158 73H139.3C121.5 73.1 120.3 73.2 117.5 75.3Z"
+              stroke="url(#paint3_linear_1_4900)" stroke-width="8" />
+          </g>
+          <defs>
+            <filter id="filter0_d_1_4900" x="0" y="0" width="307.578" height="272" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_4900" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_4900" result="shape" />
+            </filter>
+            <linearGradient id="paint0_linear_1_4900" x1="151.05" y1="4" x2="151.05" y2="260"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1F2667" />
+              <stop offset="1" stop-color="#1595B6" />
+            </linearGradient>
+            <linearGradient id="paint1_linear_1_4900" x1="104.8" y1="73" x2="104.8" y2="258"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1F2667" />
+              <stop offset="1" stop-color="#1595B6" />
+            </linearGradient>
+            <linearGradient id="paint2_linear_1_4900" x1="-57.4451" y1="359.998" x2="-57.5662" y2="327.754"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1595B6" />
+              <stop offset="1" stop-color="#1595B6" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="paint3_linear_1_4900" x1="-57.4451" y1="359.998" x2="-57.5662" y2="327.754"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1595B6" />
+              <stop offset="1" stop-color="#1595B6" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+
+        <div class="relative ml-4 md:ml-12">
+          <h1 class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-12">
+            Riyank patel
+          </h1>
+          <p class="pointer-events-none text-2xl font-['Merriweather'] italic my-4 md:my-8">
+            MERN Stack Developer
+          </p>
+        </div>
+      </div>
+
+      <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
+        <li>
+          <a href="https://www.linkedin.com/in/riyank-patel-035085254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYzdU6gD4SZGUfD0oB0xJTg%3D%3D"
+            target="_blank">
+            <svg class="w-8 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/riyank36?t=S5_HsQxd3Bkaynh9ZXYm9g&s=08" target="_blank">
+            <svg class="w-8 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:riyankpatel036@gmail.com" target="_blank">
+            <svg class="w-8 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/riyank036" target="_blank">
+            <svg class="w-8 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path fill="currentColor"
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <div
+      class="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5  after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
+      <a href="#education">
+      <button 
+        class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
+        About Me
+
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" width="55"
+          height="60" viewBox="0 0 100 100"
+          class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100">
+          <g transform="translate(0,-952.36218)">
+            <path style="
+                  text-indent: 0;
+                  text-transform: none;
+                  direction: ltr;
+                  block-progression: tb;
+                  baseline-shift: baseline;
+                  color: #000000;
+                  enable-background: accumulate;
+                "
+              d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+              fill="#fff" fill-opacity="1" stroke="white" stroke-width="2" marker="none" visibility="visible"
+              display="inline" overflow="visible" />
+          </g>
+        </svg>
+      </button>
+    </a>
+    </div>
+  </section>
+
+
+  <!-- Education & Experience -->
+
+  <section id="education" class="max-w-screen-md mx-auto px-4 pt-16 pb-8 relative">
+    <h2 
+      class="text-3xl sm:text-[40px] bg-[#111] relative z-20 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
+      Education & Experience
+    </h2>
+    <div
+      class="absolute top-24 sm:top-28 left-1/2 transform -translate-x-1/2 h-[calc(100%-200px)] w-[2px] bg-[#1788ae]">
+    </div>
+
+    <div class="relative mt-10 flex flex-col gap-10">
+
+      <div class="relative flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="850">
+        <div class="mb-7">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#1788ae] drop-shadow-[0_0_25px_#1788ae]"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <div
+          class="bg-[#191919] border-2 border-[#1788ae] p-8 rounded-3xl shadow-[0_0_10px_#1788ae] hover:scale-105 hover:shadow-[0_0_20px_#1788ae] transition-all duration-300 cursor-pointer max-w-lg w-full">
+          <h3 class="text-[#1788ae] font-bold text-2xl mb-2">High School</h3>
+          <span class="text-[#1788ae] text-base">(2019 - 2021)</span>
+          <p class="text-white text-sm md:text-base mt-4">
+            BAPS Swaminarayan Vidya Mandir, Valsad
+          </p>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="850">
+        <div class="mb-7">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#1788ae] drop-shadow-[0_0_25px_#1788ae]"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <div
+          class="bg-[#191919] border-2 border-[#1788ae] p-8 rounded-3xl shadow-[0_0_10px_#1788ae] hover:scale-105 hover:shadow-[0_0_20px_#1788ae] transition-all duration-300 cursor-pointer max-w-lg w-full">
+          <h3 class="text-[#1788ae] font-bold text-2xl mb-2">University</h3>
+          <span class="text-[#1788ae] text-base">(2021 - 2024)</span>
+          <p class="text-white text-sm md:text-base mt-4">
+            Veer Narmad South Gujarat University
+          </p>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="850">
+        <div class="mb-7">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#1788ae] drop-shadow-[0_0_25px_#1788ae]"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <div
+          class="bg-[#191919] border-2 border-[#1788ae] p-8 rounded-3xl shadow-[0_0_10px_#1788ae] hover:scale-105 hover:shadow-[0_0_20px_#1788ae] transition-all duration-300 cursor-pointer max-w-lg w-full">
+          <h3 class="text-[#1788ae] font-bold text-2xl mb-2">Internship</h3>
+          <span class="text-[#1788ae] text-base">(2024)</span>
+          <p class="text-white text-sm md:text-base mt-4">
+            Prodigy InfoTech, Mumbai (Remote)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16 mt-16 ">
+  <h2
+    class="text-3xl sm:text-[40px] bg-[#111] relative z-20 font-bold px-4 py-2 w-max mx-auto mb-14 text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
+    Skills
+  </h2>
+
+  <div class="bg-[#191919] rounded-2xl px-6 sm:px-10 font-bold text-white mx-auto flex flex-col lg:flex-row items-center gap-10 py-14 max-w-6xl min-h-[700px] drop-shadow-[0_0_10px_#1788ae] hover:drop-shadow-[0_0_20px_#1788ae] transition-all duration-300">
+
+    <div class="flex-1 w-full">
+      <p class="mb-6 text-gray-300 text-sm sm:text-base text-center lg:text-left leading-relaxed">
+        I'm a dedicated and passionate web developer, currently exploring the field through hands-on projects and real-world applications. With a strong foundation in front-end and back-end development.
+      </p>
+
+      <div class="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#javascript</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#react.js</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#node.js</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#express.js</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#zod</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#mongoDB</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#mongoose</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#html</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#css</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#sass</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#tailwind</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#git</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#github</span>
+        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">#terminal</span>
+      </div>
+
+      <div class="mt-12">
+        <h2 class="text-xl sm:text-2xl font-bold text-cyan-400 mb-5 text-center lg:text-left">MERN STACK</h2>
+        <div class="flex flex-wrap justify-center lg:justify-start gap-10 mt-8">
+          <div class="relative group flex flex-col items-center">
+            <img src="./assets/icons/mongodb.svg" class="w-10 sm:w-12 h-10 sm:h-12" alt="MongoDB" />
+            <span class="text-green-500 font-bold text-xl">M</span>
+            <div class="absolute -top-10 bg-green-600 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">MongoDB</div>
+          </div>
+          <div class="relative group flex flex-col items-center">
+            <img src="./assets/icons/express.svg" class="w-10 sm:w-12 h-10 sm:h-12" alt="Express.js" />
+            <span class="text-white font-bold text-xl">E</span>
+            <div class="absolute -top-10 bg-white text-black text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Express.js</div>
+          </div>
+          <div class="relative group flex flex-col items-center">
+            <img src="./assets/icons/react.svg" class="w-10 sm:w-12 h-10 sm:h-12" alt="React.js" />
+            <span class="text-cyan-300 font-bold text-xl">R</span>
+            <div class="absolute -top-10 bg-cyan-300 text-black text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">React.js</div>
+          </div>
+          <div class="relative group flex flex-col items-center">
+            <img src="./assets/icons/node.svg" class="w-10 sm:w-12 h-10 sm:h-12" alt="Node.js" />
+            <span class="text-lime-500 font-bold text-xl">N</span>
+            <div class="absolute -top-10 bg-lime-500 text-black text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">Node.js</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-1 flex justify-center">
+      <img src="./assets/images/coder.svg" alt="coder image" class="w-64 sm:w-[400px] md:w-[500px] lg:w-[600px]" />
+    </div>
+  </div>
+  </section>
+
+
+  <!-- Projects -->
+
+  <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+    <h2
+      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto my-10 text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
+      Latest Works
+    </h2>
+    <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#fc711c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://prodigy-wd-05-one-eta.vercel.app/" target="_blank"
+        class="flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
+          <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./assets/images/the weather.webp" alt="Weather App" />
+          <span
+            class="flex group-hover:-top-14 ease-jump duration-200 bg-[#fc711c] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">the
+            weather
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <div class="w-full">
+        <h3 class="text-[#fc711c] font-bold text-2xl md:text-4xl">
+          the weather
+        </h3>
+        <span class="text-[#fc711c] text-base md:text-lg">(Weather App)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          A weather web application that fetches and displays current weather data based on user location or manually inputted location. It shows current weather conditions, temperature, and other relevant information.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #JavaScript 
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #Weather API
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #CSS3
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #HTML5
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="order-2 sm:order-1 w-full">
+        <h3 class="text-[#14d3cc] font-bold text-2xl md:text-4xl">
+          Tic Tac Toe
+        </h3>
+        <span class="text-[#14d3cc] text-base md:text-lg">(Tic Tac Toe Game)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          An interactive game where users can play the classic tic-tac-toe game. The objective is to align three markers (X or O) in a row, column, or diagonal to win. The app handles user clicks, manages game state, and checks for winning conditions.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #JavaScript 
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #HTML5
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #CSS3
+          </li>
+        </ul>
+      </div>
+      <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#14d3cc] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://prodigy-wd-03-cyan-zeta.vercel.app/" target="_blank"
+        class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
+          <img class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./assets/images/Tic-Tac-Toe-Game.webp" alt="" />
+          <span
+            class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#14d3cc] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Tic
+            Tac Toe
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+      <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+      <div
+        class="w-4 h-4 rounded-full border-[3px] border-[#c85e85] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+      </div>
+      <a href="https://prodigy-wd-02-kohl.vercel.app/" target="_blank"
+        class="flex w-full relative justify-center sm:justify-start">
+        <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200">
+          <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./assets/images/Stopwatch.webp" alt="" />
+          <span
+            class="flex group-hover:-top-14 ease-jump duration-200 bg-[#c85e85] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Stopwatch
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-external-link">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <div class="w-full">
+        <h3 class="text-[#c85e85] font-bold text-2xl md:text-4xl">
+          Stopwatch
+        </h3>
+        <span class="text-[#c85e85] text-base md:text-lg">(Stopwatch)</span>
+        <p class="text-justify text-sm md:text-base mt-2">
+          A web-based stopwatch application that allows users to start, pause, reset, and record lap times. It features interactive buttons and real-time lap tracking for an intuitive user experience.
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #JavaScript 
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #HTML5
+          </li>
+          <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+            #CSS3
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
+  </section>
+
+
+  <!-- Contact -->
+
+  <section class="max-w-screen-xl mx-auto px-4 pb-12">
+    <h2
+      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+      Let's Connect
+    </h2>
+    <div class="flex flex-col md:flex-row items-center mt-10">
+      <div class="w-full">
+        <img src="./assets/images/contact-me.svg" alt="phone" />
+      </div>
+      <form class="w-full" name="contactUS" netlify>
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+        <div class="relative mb-4">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+            </svg>
+          </div>
+          <input type="text" id="name" name="name"
+            class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            placeholder="Enter your name" />
+        </div>
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+        <div class="relative mb-4">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 20 16">
+              <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+              <path
+                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+            </svg>
+          </div>
+          <input type="text" id="email" name="email"
+            class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            placeholder="name@email.com" />
+        </div>
+        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+        <div class="relative mb-4">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"></div>
+          <textarea id="message" name="message" rows="8"
+            class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">
+          Send
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+
+  <footer class="flex flex-col items-center pb-10">
+    <p class="text-xs text-gray-300">Riyank Patel © 2025</p>
+    <div class="black-logo my-4">
+
+      <!-- footer R-logo  -->
+      <a class="pointer-events-auto" href="#">
+        <svg width="42" height="38" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_1_3)">
+            <path
+              d="M4.13177 2.13177C3.61699 2.68719 2.70936 3.62192 2.14039 4.21798C1.55788 4.80049 1.08374 5.31527 1.08374 5.36946C1.08374 5.4101 6.09606 5.45074 12.2328 5.45074C23.2734 5.45074 23.3818 5.45074 24.2488 5.74877C24.9126 5.96552 25.319 6.20936 25.9015 6.77832C26.8091 7.63177 27.1207 8.18719 27.3645 9.35222C27.5542 10.2869 27.5 11.2488 27.1613 12.319C26.9446 13.0369 26.1995 13.931 24.9532 14.9335C24.6281 15.1909 24.0727 15.665 23.734 15.9631C23.3818 16.2746 22 17.4938 20.6724 18.6724C19.3313 19.8645 18.0443 20.9889 17.8276 21.1921L17.4076 21.5714L17.8411 21.9372C18.0714 22.1539 18.5862 22.5874 18.9791 22.9261C19.3719 23.2648 20.0899 23.8879 20.5776 24.3214C21.0653 24.7414 21.7697 25.351 22.1355 25.6761C22.5012 25.9877 23.0837 26.5025 23.4224 26.814C23.7611 27.1121 24.4113 27.681 24.8584 28.0739C25.3054 28.4532 25.9557 29.0222 26.2943 29.3337C26.633 29.6453 27.1749 30.1195 27.4865 30.3768C27.8116 30.6342 28.2857 31.0542 28.5566 31.3116C28.8276 31.5554 29.4372 32.0702 29.8978 32.4495C30.3719 32.8288 30.7512 33.181 30.7512 33.2217C30.7512 33.2759 30.9815 33.4791 31.266 33.6687C31.5369 33.8584 32.1872 34.4138 32.702 34.9015L33.6367 35.7956H36.7389H39.8411L39.3399 35.2808C39.0554 35.0099 38.7032 34.6847 38.5271 34.5764C38.3645 34.468 37.7278 33.9126 37.1182 33.3571C36.5086 32.8017 35.9397 32.3005 35.8584 32.2463C35.7635 32.2057 35.4249 31.8941 35.0862 31.569C34.7475 31.2438 33.8399 30.4446 33.0542 29.7672C32.2685 29.1034 31.0222 28.0062 30.2771 27.3559C27.8929 25.2426 27.6626 25.0394 27.0123 24.484C26.6601 24.186 26.2401 23.8202 26.0911 23.6712C25.9286 23.5222 25.5493 23.197 25.2512 22.9397C24.9667 22.6823 24.4926 22.2759 24.2081 22.0185L23.7069 21.5714L24.3436 20.9754C24.7094 20.6502 25.3867 20.0406 25.8744 19.6071C26.3621 19.1872 26.9988 18.6047 27.3103 18.3337C27.6084 18.0628 28.1773 17.5751 28.5702 17.2365C29.4101 16.532 29.383 16.5591 30.0197 15.7057C30.6158 14.9064 31.0764 13.8768 31.4421 12.5222C31.835 11.0727 31.7537 9.05419 31.2254 7.68596C31.0357 7.15764 30.8325 6.61576 30.7919 6.46675C30.7512 6.31773 30.399 5.74877 30.0197 5.19335C28.7599 3.36453 26.7143 1.96921 24.3978 1.37315C23.4631 1.12931 22.7857 1.11576 14.2377 1.11576H5.08005L4.13177 2.13177Z"
+              stroke="url(#paint0_linear_1_3)" stroke-opacity="0.9" stroke-width="0.985222" />
+            <path
+              d="M15.9175 10.7746C15.7007 10.9372 15.3214 11.2488 15.0776 11.4791C14.8473 11.6958 14.3596 12.1429 13.9938 12.4544C13.6416 12.766 13.0727 13.2672 12.734 13.5517C12.3953 13.8498 11.5419 14.5948 10.8374 15.2044C10.133 15.814 9.18473 16.6404 8.73768 17.0332C8.29064 17.4261 7.72167 17.9138 7.47783 18.1305C7.22044 18.3337 6.85468 18.6589 6.65148 18.8485C6.43473 19.0382 5.96059 19.4717 5.56773 19.8103C5.18842 20.149 4.60591 20.6773 4.26724 20.9889L3.67118 21.5579L4.98522 22.7229C5.7032 23.3596 6.61084 24.1589 6.9766 24.4975C7.35591 24.8362 7.87069 25.3103 8.12808 25.5406C8.39901 25.7845 8.76478 26.0961 8.94089 26.2451C9.26601 26.516 11.298 28.2635 11.5961 28.548C11.6909 28.6158 12.0837 28.9544 12.4766 29.2931C12.8695 29.6318 13.4384 30.133 13.7229 30.4039C14.0209 30.6884 14.2919 30.9187 14.3325 30.9187C14.3732 30.9187 14.7118 31.2032 15.1047 31.569C15.9852 32.3682 16.8387 33.1133 17.7599 33.899C18.1527 34.2377 18.7352 34.7389 19.0468 35.0234L19.6158 35.5246L22.1626 35.4975L24.7229 35.4569L24.33 35.1182C23.6798 34.5628 21.6342 32.7611 21.3227 32.4766C21.1601 32.3276 20.6995 31.9347 20.3066 31.5961C19.9138 31.2574 19.3448 30.7697 19.0468 30.4852C18.7352 30.2143 18.1256 29.6724 17.6786 29.2931C17.2315 28.9002 16.5813 28.3313 16.2426 28.0332C15.9039 27.7217 15.335 27.2204 14.9828 26.9224C14.617 26.6244 14.2106 26.2586 14.0616 26.1232C13.4384 25.5542 11.2574 23.6305 10.5665 23.0616C10.1601 22.7229 9.63177 22.2488 9.37438 22.0049C8.81897 21.4766 8.75123 21.585 10.702 19.9052C11.4877 19.2414 12.314 18.5098 12.5308 18.3066C12.7611 18.1034 13.33 17.5887 13.8177 17.1687C14.9421 16.2069 15.6872 15.5431 16.4458 14.8658C16.7709 14.5677 17.3399 14.0665 17.7057 13.7549C19.4803 12.2241 20.8756 10.9914 21.1195 10.7475L21.4039 10.4631H18.8707C16.4594 10.4766 16.2968 10.4901 15.9175 10.7746Z"
+              stroke="url(#paint1_linear_1_3)" stroke-opacity="0.9" stroke-width="0.985222" />
+            <path
+              d="M4.13177 2.13177C3.61699 2.68719 2.70936 3.62192 2.14039 4.21798C1.55788 4.80049 1.08374 5.31527 1.08374 5.36946C1.08374 5.4101 6.09606 5.45074 12.2328 5.45074C23.2734 5.45074 23.3818 5.45074 24.2488 5.74877C24.9126 5.96552 25.319 6.20936 25.9015 6.77832C26.8091 7.63177 27.1207 8.18719 27.3645 9.35222C27.5542 10.2869 27.5 11.2488 27.1613 12.319C26.9446 13.0369 26.1995 13.931 24.9532 14.9335C24.6281 15.1909 24.0727 15.665 23.734 15.9631C23.3818 16.2746 22 17.4938 20.6724 18.6724C19.3313 19.8645 18.0443 20.9889 17.8276 21.1921L17.4076 21.5714L17.8411 21.9372C18.0714 22.1539 18.5862 22.5874 18.9791 22.9261C19.3719 23.2648 20.0899 23.8879 20.5776 24.3214C21.0653 24.7414 21.7697 25.351 22.1355 25.6761C22.5012 25.9877 23.0837 26.5025 23.4224 26.814C23.7611 27.1121 24.4113 27.681 24.8584 28.0739C25.3054 28.4532 25.9557 29.0222 26.2943 29.3337C26.633 29.6453 27.1749 30.1195 27.4865 30.3768C27.8116 30.6342 28.2857 31.0542 28.5566 31.3116C28.8276 31.5554 29.4372 32.0702 29.8978 32.4495C30.3719 32.8288 30.7512 33.181 30.7512 33.2217C30.7512 33.2759 30.9815 33.4791 31.266 33.6687C31.5369 33.8584 32.1872 34.4138 32.702 34.9015L33.6367 35.7956H36.7389H39.8411L39.3399 35.2808C39.0554 35.0099 38.7032 34.6847 38.5271 34.5764C38.3645 34.468 37.7278 33.9126 37.1182 33.3571C36.5086 32.8017 35.9397 32.3005 35.8584 32.2463C35.7635 32.2057 35.4249 31.8941 35.0862 31.569C34.7475 31.2438 33.8399 30.4446 33.0542 29.7672C32.2685 29.1034 31.0222 28.0062 30.2771 27.3559C27.8929 25.2426 27.6626 25.0394 27.0123 24.484C26.6601 24.186 26.2401 23.8202 26.0911 23.6712C25.9286 23.5222 25.5493 23.197 25.2512 22.9397C24.9667 22.6823 24.4926 22.2759 24.2081 22.0185L23.7069 21.5714L24.3436 20.9754C24.7094 20.6502 25.3867 20.0406 25.8744 19.6071C26.3621 19.1872 26.9988 18.6047 27.3103 18.3337C27.6084 18.0628 28.1773 17.5751 28.5702 17.2365C29.4101 16.532 29.383 16.5591 30.0197 15.7057C30.6158 14.9064 31.0764 13.8768 31.4421 12.5222C31.835 11.0727 31.7537 9.05419 31.2254 7.68596C31.0357 7.15764 30.8325 6.61576 30.7919 6.46675C30.7512 6.31773 30.399 5.74877 30.0197 5.19335C28.7599 3.36453 26.7143 1.96921 24.3978 1.37315C23.4631 1.12931 22.7857 1.11576 14.2377 1.11576H5.08005L4.13177 2.13177Z"
+              stroke="url(#paint2_linear_1_3)" stroke-width="0.985222" />
+            <path
+              d="M15.9175 10.7746C15.7007 10.9372 15.3214 11.2488 15.0776 11.4791C14.8473 11.6958 14.3596 12.1429 13.9938 12.4544C13.6416 12.766 13.0727 13.2672 12.734 13.5517C12.3953 13.8498 11.5419 14.5948 10.8374 15.2044C10.133 15.814 9.18473 16.6404 8.73768 17.0332C8.29064 17.4261 7.72167 17.9138 7.47783 18.1305C7.22044 18.3337 6.85468 18.6589 6.65148 18.8485C6.43473 19.0382 5.96059 19.4717 5.56773 19.8103C5.18842 20.149 4.60591 20.6773 4.26724 20.9889L3.67118 21.5579L4.98522 22.7229C5.7032 23.3596 6.61084 24.1589 6.9766 24.4975C7.35591 24.8362 7.87069 25.3103 8.12808 25.5406C8.39901 25.7845 8.76478 26.0961 8.94089 26.2451C9.26601 26.516 11.298 28.2635 11.5961 28.548C11.6909 28.6158 12.0837 28.9544 12.4766 29.2931C12.8695 29.6318 13.4384 30.133 13.7229 30.4039C14.0209 30.6884 14.2919 30.9187 14.3325 30.9187C14.3732 30.9187 14.7118 31.2032 15.1047 31.569C15.9852 32.3682 16.8387 33.1133 17.7599 33.899C18.1527 34.2377 18.7352 34.7389 19.0468 35.0234L19.6158 35.5246L22.1626 35.4975L24.7229 35.4569L24.33 35.1182C23.6798 34.5628 21.6342 32.7611 21.3227 32.4766C21.1601 32.3276 20.6995 31.9347 20.3066 31.5961C19.9138 31.2574 19.3448 30.7697 19.0468 30.4852C18.7352 30.2143 18.1256 29.6724 17.6786 29.2931C17.2315 28.9002 16.5813 28.3313 16.2426 28.0332C15.9039 27.7217 15.335 27.2204 14.9828 26.9224C14.617 26.6244 14.2106 26.2586 14.0616 26.1232C13.4384 25.5542 11.2574 23.6305 10.5665 23.0616C10.1601 22.7229 9.63177 22.2488 9.37438 22.0049C8.81897 21.4766 8.75123 21.585 10.702 19.9052C11.4877 19.2414 12.314 18.5098 12.5308 18.3066C12.7611 18.1034 13.33 17.5887 13.8177 17.1687C14.9421 16.2069 15.6872 15.5431 16.4458 14.8658C16.7709 14.5677 17.3399 14.0665 17.7057 13.7549C19.4803 12.2241 20.8756 10.9914 21.1195 10.7475L21.4039 10.4631H18.8707C16.4594 10.4766 16.2968 10.4901 15.9175 10.7746Z"
+              stroke="url(#paint3_linear_1_3)" stroke-width="0.985222" />
+          </g>
+          <defs>
+            <filter id="filter0_d_1_3" x="0.0985219" y="0.623153" width="41.4024" height="36.6502"
+              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="0.492611" />
+              <feGaussianBlur stdDeviation="0.246305" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape" />
+            </filter>
+            <linearGradient id="paint0_linear_1_3" x1="20.4624" y1="1.11576" x2="20.4624" y2="35.7956"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1F2667" />
+              <stop offset="1" stop-color="#1595B6" />
+            </linearGradient>
+            <linearGradient id="paint1_linear_1_3" x1="14.197" y1="10.4631" x2="14.197" y2="35.5246"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1F2667" />
+              <stop offset="1" stop-color="#1595B6" />
+            </linearGradient>
+            <linearGradient id="paint2_linear_1_3" x1="-7.78197" y1="49.3421" x2="-7.79838" y2="44.9741"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1595B6" />
+              <stop offset="1" stop-color="#1595B6" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="paint3_linear_1_3" x1="-7.78197" y1="49.3421" x2="-7.79838" y2="44.9741"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1595B6" />
+              <stop offset="1" stop-color="#1595B6" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+
+
+    </div>
+    <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+      <li>
+        <a href="https://www.linkedin.com/in/riyank-patel-035085254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYzdU6gD4SZGUfD0oB0xJTg%3D%3D"
+          target="_blank">
+          <svg class="w-5 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+            </path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com/riyank36?t=S5_HsQxd3Bkaynh9ZXYm9g&s=08" target="_blank">
+          <svg class="w-5 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+            </path>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a href="mailto:riyankpatel036@gmail.com" target="_blank">
+          <svg class="w-5 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z">
+            </path>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/riyank036" target="_blank">
+          <svg class="w-7 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <path fill="currentColor"
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+          </svg>
+        </a>
+      </li>
+
+    </ul>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+  <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,        
+    });
+  </script>
+</body>
+</html>
