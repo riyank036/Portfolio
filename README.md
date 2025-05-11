@@ -32,7 +32,7 @@ A modern, responsive portfolio website built with HTML, Tailwind CSS, and JavaSc
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/riyank036/Portfolio.git
 ```
 
 2. Install dependencies:
